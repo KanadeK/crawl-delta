@@ -1,0 +1,14 @@
+name: Bug report
+description: Report reproducible incorrect behavior
+body:
+  - type: textarea
+    id: reproduction
+    attributes:
+      label: Synthetic reproduction and command
+      description: Include version, OS and expected/actual behavior. Remove private data.
+    validations:
+      required: true
+  - type: textarea
+    id: output
+    attributes:
+      label: Redacted output

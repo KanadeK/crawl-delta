@@ -1,0 +1,9 @@
+name: User problem
+description: Describe a concrete unmet workflow
+body:
+  - type: textarea
+    id: problem
+    attributes:
+      label: Problem, current workaround and desired outcome
+    validations:
+      required: true

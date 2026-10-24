@@ -1,0 +1,10 @@
+{
+  "version": 1,
+  "origin": "https://example.test",
+  "cases": [
+    {"id": "public-home", "agent": "ExampleBot", "path": "/", "before": true, "after": true},
+    {"id": "reviewed-launch", "agent": "ExampleBot", "path": "/launch/product", "before": false, "after": true},
+    {"id": "private-stays-blocked", "agent": "ExampleBot", "path": "/private/account", "before": false, "after": false},
+    {"id": "archive-stays-blocked", "agent": "ArchiveBot", "path": "/launch/product", "before": false, "after": false}
+  ]
+}

@@ -1,0 +1,6 @@
+User-agent: *
+Disallow: /launch/
+Disallow: /private/
+
+User-agent: ArchiveBot
+Disallow: /

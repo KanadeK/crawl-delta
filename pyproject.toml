@@ -1,0 +1,32 @@
+[build-system]
+requires = ["setuptools>=77"]
+build-backend = "setuptools.build_meta"
+
+[project]
+name = "crawl-delta"
+version = "0.1.0"
+description = "Gate reviewed robots.txt behavior changes with offline before-and-after contracts"
+readme = "README.md"
+requires-python = ">=3.11"
+license = "MIT"
+authors = [{name = "KanadeK"}]
+dependencies = ["protego==0.7.0"]
+keywords = ["cli", "testing", "developer-tools"]
+classifiers = ["Programming Language :: Python :: 3", "Operating System :: OS Independent"]
+
+[project.urls]
+Repository = "https://github.com/KanadeK/crawl-delta"
+Issues = "https://github.com/KanadeK/crawl-delta/issues"
+
+[project.scripts]
+crawl-delta = "crawl_delta.cli:main"
+
+[tool.setuptools.packages.find]
+where = ["src"]
+
+[tool.ruff]
+target-version = "py311"
+line-length = 100
+
+[tool.ruff.lint]
+select = ["E4", "E7", "E9", "F", "I", "UP", "B"]
